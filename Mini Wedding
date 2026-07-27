@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casamento Mikaelle & Maicon</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --terracota: #B85B3A;
+            --caramelo: #C68B59;
+            --areia: #E8DFD8;
+            --off-white: #FAF7F2;
+            --verde-oliva: #6B705C;
+            --texto: #3D312A;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--off-white);
+            color: var(--texto);
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 600;
+        }
+
+        /* Header / Banner */
+        header {
+            background-color: var(--terracota);
+            color: var(--off-white);
+            padding: 60px 20px;
+            border-bottom: 4px solid var(--verde-oliva);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-style: italic;
+            font-size: 1.2rem;
+            color: var(--areia);
+        }
+
+        /* Container Principal */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Seções */
+        section {
+            background: #ffffff;
+            border: 1px solid var(--areia);
+            border-radius: 12px;
+            padding: 30px 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+        }
+
+        section h2 {
+            color: var(--terracota);
+            font-size: 2rem;
+            margin-bottom: 15px;
+            border-bottom: 2px solid var(--areia);
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        /* Ficha de Detalhes */
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .info-card {
+            background-color: var(--off-white);
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid var(--areia);
+        }
+
+        .info-card h4 {
+            color: var(--verde-oliva);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        /* Formulário RSVP */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 500px;
+            margin: 20px auto 0 auto;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid var(--areia);
+            border-radius: 6px;
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--off-white);
+            color: var(--texto);
+        }
+
+        button {
+            background-color: var(--terracota);
+            color: white;
+            border: none;
+            padding: 14px;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background-color: var(--caramelo);
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: var(--verde-oliva);
+            color: var(--off-white);
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Mikaelle & Maicon</h1>
+        <p>“Entre cafés, flores e sorrisos”</p>
+    </header>
+
+    <div class="container">
+
+        <!-- Detalhes do Evento -->
+        <section>
+            <h2>Nosso Grande Dia</h2>
+            <p>Estamos muito felizes em compartilhar esse momento tão especial com você!</p>
+            
+            <div class="info-grid">
+                <div class="info-card">
+                    <h4>📅 Data</h4>
+                    <p><strong>09 de Janeiro de 2028</strong></p>
+                    <p>Domingo - 10:00h</p>
+                </div>
+                <div class="info-card">
+                    <h4>📍 Local</h4>
+                    <p><strong>Selluc Casa de Eventos</strong></p>
+                    <p>Gravataí / RS</p>
+                </div>
+                <div class="info-card">
+                    <h4>☕ Estilo</h4>
+                    <p><strong>Brunch Intimista</strong></p>
+                    <p>Traje Esporte Fino</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nossa História -->
+        <section>
+            <h2>Nossa História</h2>
+            <p>Entre conversas simples, xícaras de café e muitos sorrisos compartilhados, construímos a nossa história[span_1](start_span)[span_1](end_span). Convidamos você para celebrar conosco o início deste novo capítulo em um brunch leve, aconchegante e cheio de afeto[span_2](start_span)[span_2](end_span).</p>
+        </section>
+
+        <!-- Confirmação de Presença (RSVP) -->
+        <section>
+            <h2>Confirmação de Presença (RSVP)</h2>
+            <p>Por favor, confirme sua presença até 30 dias antes do evento.</p>
+            
+            <form action="https://formspree.io/f/SEU_ID_HERE" method="POST">
+                <input type="text" name="nome" placeholder="Seu Nome Completo" required>
+                <select name="confirmacao" required>
+                    <option value="" disabled selected>Você irá ao evento?</option>
+                    <option value="Sim">Sim, com certeza!</option>
+                    <option value="Nao">Infelizmente não poderei ir</option>
+                </select>
+                <textarea name="mensagem" rows="3" placeholder="Deixe uma mensagem carinhosa para os noivos (opcional)"></textarea>
+                <button type="submit">Enviar Confirmação</button>
+            </form>
+        </section>
+
+        <!-- Localização -->
+        <section>
+            <h2>Como Chegar</h2>
+            <p><strong>Selluc Casa de Eventos</strong> — Gravataí/RS[span_3](start_span)[span_3](end_span)</p>
+            <div style="margin-top: 15px;">
+                <a href="https://maps.google.com" target="_blank" style="color: var(--terracota); font-weight: bold;">Ver no Google Maps ➔</a>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>Mikaelle & Maicon — 2028</p>
+    </footer>
+
+</body>
+</html>
